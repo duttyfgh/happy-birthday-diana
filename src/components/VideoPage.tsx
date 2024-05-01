@@ -31,14 +31,14 @@ const VideoPage = ({ isPlaying, setIsPlaying }: VideoPageProps) => {
     }
 
     return (
-        <div className='bg-black h-screen flex flex-col justify-center pb-28'>
+        <div className='bg-black h-screen flex flex-col items-center justify-center pb-28'>
             <video
                 ref={videoRef}
                 src={videoGift}
                 onEnded={handleVideoEnded}
                 loop
                 autoPlay={false}
-                className='w-[319px] object-cover'
+                className='w-[300px] object-cover -ml-16'
                 style={{ height: '300px' }}
             />
             <button onClick={togglePlay} className='flex justify-center m-4'>
