@@ -31,7 +31,7 @@ const VideoPage = ({ isPlaying, setIsPlaying }: VideoPageProps) => {
     }
 
     return (
-        <div className='bg-black h-screen flex flex-col items-center justify-center pb-28 absolute top-0'>
+        <div className='bg-black h-screen w-full flex flex-col items-center justify-center pb-28 absolute top-0 z-0'>
             <video
                 ref={videoRef}
                 src={videoGift}

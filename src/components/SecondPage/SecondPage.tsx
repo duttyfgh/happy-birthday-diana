@@ -24,7 +24,7 @@ const SecondPage = () => {
         <AnimatePresence>
             {isUnmount || <motion.div
                 exit={{ opacity: 0 }}
-                className="bg-black flex flex-col justify-center items-center h-screen w-full gap-10 z-10u">
+                className="bg-black absolute top-0 flex flex-col justify-center items-center h-screen w-full gap-10 z-20">
                 <div className="flex flex-col">
                     <Candle isBlowing={isBlowing} isSmoke={isSmoke} />
                     <img src={cake} alt="Something went wrong.. Refresh the site" className="w-[200px] z-10" />

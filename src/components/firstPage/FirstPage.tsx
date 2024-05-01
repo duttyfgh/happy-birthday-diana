@@ -61,8 +61,9 @@ const FirstPage = () => {
         variants={disappearing}
         initial='hidden'
         exit='exit'
-        className='flex flex-col justify-around h-screen w-full items-center absolute z-50 bg-black'>
-        <div className='flex flex-col items-center w-full'>
+        className='flex flex-col justify-top gap-20 h-screen w-full items-center absolute z-50 bg-black'>
+
+        <div className='flex flex-col items-center w-full py-20'>
           <div>
             {happyArr.map((item) => (
               <Later
@@ -82,6 +83,7 @@ const FirstPage = () => {
             ))}
           </div>
         </div>
+
         <div className='flex flex-col gap-20'>
           <span className='z-10 text-[20px] text-slate-300'>Happy birthday Diana!</span>
           <button
