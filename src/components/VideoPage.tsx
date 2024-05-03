@@ -38,7 +38,7 @@ const VideoPage = ({ isPlaying, setIsPlaying }: VideoPageProps) => {
                 onEnded={handleVideoEnded}
                 loop
                 autoPlay={false}
-                className='w-[300px] object-cover -ml-16'
+                className='w-[300px] object-cover'
                 style={{ height: '300px' }}
             />
             <button onClick={togglePlay} className='flex justify-center m-4'>
